@@ -3,7 +3,8 @@
 //Factorial of a number = n * (n-1) * (n-2) * (n-3) ... so on.
 long int recursive_factorial(int n)
 {
-    if (n == 0 || n == 1)
+    printf("Calling recursive_factorial (%d).\n", n);
+    if (n == 0 || n == 1) //Base Condition to stop the recursive call.
     {
         return 1;
     }
@@ -15,8 +16,8 @@ long int recursive_factorial(int n)
 int main()
 {
     int number;
-    printf("Enter the number to get the factorial: ");
+    printf("\nEnter the number to get the factorial: ");
     scanf("%d", &number);
-    printf("Factorial of %d is %d", number, recursive_factorial(number));
+    printf("\nFactorial of %d is %d\n\n", number, recursive_factorial(number));
     return 0;
 }
