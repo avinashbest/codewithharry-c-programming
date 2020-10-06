@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<conio.h>
 //First n natural number printing program using for loop.
 int main()
 {
